@@ -19,6 +19,7 @@ export class StarsComponent implements OnInit {
     // 实星返回false， 空星返回true
     this.stars = [];
     for (let i = 1; i <= 5; i++) {
+      // 非常好的实现方式
       this.stars.push( i > this.rating);    
     }
     
