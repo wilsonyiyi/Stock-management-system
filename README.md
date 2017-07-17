@@ -4,12 +4,25 @@
 ## 目录
 
 ### 1.技术栈
+1. Angular4.0
+2. [Admin LTE模板框架](https://adminlte.io/) , 基于bootstrap3, 采用了样式结构
+3. 
 
-### 2.搭建步骤
+
+### 2.使用
+
+> clone代码： git clone https://github.com/Willworkgogogo/Stock-management-system.git
+
+
+> npm install
+
+> 在stock目录下启动项目: npm run start
+
+### 3.搭建步骤
 
 
 
-### 3.问题汇总
+### 4.问题汇总
 
 
 1. 全局样式引入注意细节
