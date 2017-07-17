@@ -24,7 +24,11 @@
         "../node_modules/admin-lte/dist/css/AdminLTE.css",
         "../node_modules/admin-lte/dist/css/skins/skin-blue.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/admin-lte/dist/js/AdminLTE.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
