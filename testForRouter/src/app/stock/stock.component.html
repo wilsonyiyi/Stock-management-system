@@ -1,0 +1,16 @@
+<div class="stock">
+  <p>
+    这里是股票信息组件
+  </p>
+
+  <h3>
+    股票的ID是： {{stockId}}
+  </h3>
+
+  <p>
+    isPro: {{isPro}}
+  </p>
+  <a [routerLink]="['./']">买家列表</a>
+  <a [routerLink]="['./seller', 100]">卖家列表</a>
+  <router-outlet></router-outlet>
+</div>
