@@ -11,6 +11,9 @@ import { Code404Component } from './code404/code404.component';
 import { BuyerListComponent } from './stock/buyer-list/buyer-list.component';
 import { SellerListComponent } from './stock/seller-list/seller-list.component';
 import { ConsultComponent } from './consult/consult.component';
+import {PermissionGuard} from "./guard/permission.guard";
+import {FocusGuard} from "./guard/focus.guard";
+import {StockResolve} from "./guard/stock.resolve";
 
 @NgModule({
   declarations: [
@@ -28,7 +31,7 @@ import { ConsultComponent } from './consult/consult.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PermissionGuard, FocusGuard, StockResolve],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,11 +4,17 @@
   </p>
 
   <h3>
-    股票的ID是： {{stockId}}
+    股票的ID是： {{stock.id}}
+  </h3>
+  <h3>
+    股票的name是： {{stock.name}}
   </h3>
 
   <p>
     isPro: {{isPro}}
+  </p>
+  <p>
+    <input type="button" (click)="focus = !focus" value="关注">
   </p>
   <a [routerLink]="['./']">买家列表</a>
   <a [routerLink]="['./seller', 100]">卖家列表</a>
