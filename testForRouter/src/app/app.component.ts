@@ -8,13 +8,13 @@ import { Router } from '@angular/router';
 })
 
 export class AppComponent {
-  
+
   constructor(private router: Router) {
-    
+
   }
-  
+
   toStockDetail() {
-    this.router.navigate(['/stock', 3])
+    this.router.navigate(['/stock', 1])
   }
 
 }

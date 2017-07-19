@@ -13,7 +13,9 @@ export class StockResolve implements Resolve<Stock> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Stock | Observable<Stock> | Promise<Stock>{
     let id = route.params["id"];
-    if (id == '1') {
+    console.log("id: ", id == 1)
+    if (id == 1) {
+      console.log(new Stock(1, "SMM"))
       return new Stock(1, "SMM")
     }else {
       this.router.navigate(['/home']);

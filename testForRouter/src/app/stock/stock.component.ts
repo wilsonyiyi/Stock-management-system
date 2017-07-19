@@ -1,3 +1,4 @@
+///<reference path="../../../node_modules/rxjs/Observable.d.ts"/>
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
@@ -16,9 +17,9 @@ export class StockComponent implements OnInit {
   private focus: boolean = false;
 
   constructor(private routing: ActivatedRoute) {
-    this.routing.params.subscribe((params: Params) => {
-      this.stock.id = params["id"]
-    })
+    // this.routing.params.subscribe((params: Params) => {
+    //   this.stock.id = params["id"]
+    // })
   }
 
   ngOnInit() {
@@ -36,7 +37,7 @@ export class StockComponent implements OnInit {
     this.routing.data.subscribe((data: {stock: Stock}) => {
       this.stock = data.stock
     })
-    this.isPro = this.routing.snapshot.data[0]["isPro"]
+    // this.isPro = this.routing.snapshot.data[0]["isPro"]
   }
 
   isFocus() {
