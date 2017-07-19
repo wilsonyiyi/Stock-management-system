@@ -18,10 +18,11 @@ import { StockFormComponent } from './stock/stock-form/stock-form.component';
 
 // 路由
 const routeConfig: Routes = [
-	{path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+	{path: '', redirectTo: '/dashboard', pathMatch: 'full'},
 	{path: 'dashboard', component: DashboardComponent},
-	{path: 'stock', component: StockManageComponent}
-]
+	{path: 'stock', component: StockManageComponent},
+	{path: 'stock/:id', component: StockFormComponent}
+];
 
 
 @NgModule({

@@ -1,6 +1,6 @@
 <div class="box">
   <div class="box-header with-border">
-    <a href="" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-plus">创建</span></a>
+    <a href="javascript:;" (click)="create()" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-plus">创建</span></a>
     <div class="box-tools" style="top: 10px;">
       <div class="input-group input-group-sm" style="width: 150px;">
         <input type="text" name="table_search" class="form-control pull-right" placeholder="股票搜索">
@@ -26,9 +26,9 @@
         <td>{{item.name}}</td>
         <td>{{item.price}}</td>
         <!-- <td>{{item.rating}}</td> -->
-         <td><app-stars [rating]="item.rating"></app-stars></td> 
+         <td><app-stars [rating]="item.rating"></app-stars></td>
         <td>
-          <a class="btn btn-info btn-xs" href=""><span class="glyphicon glyphicon-pencil"></span>修改</a>
+          <a class="btn btn-info btn-xs" href="javascript:;" (click)="update(item)"><span class="glyphicon glyphicon-pencil"></span>修改</a>
           <a class="btn btn-danger btn-xs" href=""><span class="glyphicon glyphicon-warning-sign"></span>删除</a>
         </td>
       </tr>
