@@ -15,6 +15,7 @@ import { StarsComponent } from './stock/stars/stars.component';
 import {RouterModule, Routes} from "@angular/router";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StockFormComponent } from './stock/stock-form/stock-form.component';
+import {StockService} from "./stock/stock.service";
 
 // 路由
 const routeConfig: Routes = [
@@ -44,7 +45,7 @@ const routeConfig: Routes = [
     HttpModule,
 	RouterModule.forRoot(routeConfig)
   ],
-  providers: [],
+  providers: [StockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
