@@ -1,7 +1,7 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -43,6 +43,7 @@ const routeConfig: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+	ReactiveFormsModule,
 	RouterModule.forRoot(routeConfig)
   ],
   providers: [StockService],
