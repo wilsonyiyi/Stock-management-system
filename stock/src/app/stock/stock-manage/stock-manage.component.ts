@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {Stock, StockService} from "../stock.service";
+import {FormControl} from "@angular/forms";
 import 'rxjs/Rx';
 
 @Component({
@@ -12,6 +13,9 @@ export class StockManageComponent implements OnInit {
 
   public stocks: Array<Stock>;
 
+  // 搜索关键字
+  private keywords: string;
+
   // formControl, 搜索响应式编程
   public nameField: FormControl = new FormControl();
 
@@ -19,6 +23,11 @@ export class StockManageComponent implements OnInit {
 
   ngOnInit() {
     this.stocks = this.stockService.getStocks();
+    this.nameField.valueChanges
+		.debounceTime(500)
+		.subscribe(value => {
+			this.keywords = value
+		});
   }
 
   create(){

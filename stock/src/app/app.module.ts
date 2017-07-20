@@ -16,6 +16,7 @@ import {RouterModule, Routes} from "@angular/router";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StockFormComponent } from './stock/stock-form/stock-form.component';
 import {StockService} from "./stock/stock.service";
+import { StockFilterPipe } from './stock/stock-filter.pipe';
 
 // 路由
 const routeConfig: Routes = [
@@ -37,7 +38,8 @@ const routeConfig: Routes = [
     StockManageComponent,
     StarsComponent,
     DashboardComponent,
-    StockFormComponent
+    StockFormComponent,
+    StockFilterPipe
   ],
   imports: [
     BrowserModule,

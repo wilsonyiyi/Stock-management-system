@@ -3,10 +3,10 @@
     <a href="javascript:;" (click)="create()" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-plus">创建</span></a>
     <div class="box-tools" style="top: 10px;">
       <div class="input-group input-group-sm" style="width: 150px;">
-        <input type="text" name="table_search" class="form-control pull-right" placeholder="股票搜索">
+        <input [formControl]="nameField" name="table_search" class="form-control pull-right" placeholder="股票搜索">
 
         <div class="input-group-btn">
-          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+          <button class="btn btn-default"><i class="fa fa-search"></i></button>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@
         <th>股票评级</th>
         <th>操作</th>
       </tr>
-      <tr *ngFor="let item of stocks; let i = index">
+      <tr *ngFor="let item of stocks | stockFilter:'name':keywords; let i = index">
         <td>{{ i + 1 }}</td>
         <td>{{item.name}}</td>
         <td>{{item.price}}</td>
