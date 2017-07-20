@@ -11,7 +11,10 @@ export class StockSearchComponent implements OnInit {
   public price: number;
 
   @Output()
-  private searchResult: EventEmitter<StockInfo> = new EventEmitter();
+  public searchResult: EventEmitter<StockInfo> = new EventEmitter(); // 股票查询结果
+
+  @Output()
+  public addCart: EventEmitter<StockInfo> = new EventEmitter(); // 添加到购物车
 
   constructor() { }
 
@@ -21,6 +24,10 @@ export class StockSearchComponent implements OnInit {
       this.price = stockInfo.price;
       this.searchResult.emit(stockInfo);
     }, 3000)
+  }
+
+  buyStock() {
+    this.addCart.emit(new StockInfo(this.keyword, this.price));
   }
 
 }
