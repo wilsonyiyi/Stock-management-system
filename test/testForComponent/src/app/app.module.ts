@@ -6,12 +6,20 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { StockSearchComponent } from './stock-search/stock-search.component';
 import { StockCartComponent } from './stock-cart/stock-cart.component';
+import { LifeComponent } from './life/life.component';
+import { TestPipe } from './test.pipe';
+import { TestComponent } from './test/test.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StockSearchComponent,
-    StockCartComponent
+    StockCartComponent,
+    LifeComponent,
+    TestPipe,
+    TestComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

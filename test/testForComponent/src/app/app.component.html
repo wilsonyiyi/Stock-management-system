@@ -1,9 +1,31 @@
-<h1>
-  父组件
-</h1>
+<!--<h1>-->
+  <!--父组件-->
+<!--</h1>-->
 <!--<p>-->
   <!--要搜索的股票关键字是{{search}}, 当前价格是{{price | number:'2.2-2'}}-->
 <!--</p>-->
-<input placeholder="请输入搜索关键字" [(ngModel)]="search">
-<app-stock-search [keyword]="search" (addCart)="addCartHandler($event)"></app-stock-search>
-<app-stock-cart [stockInfo]="stockInfo"></app-stock-cart>
+<!--<input placeholder="请输入搜索关键字" [(ngModel)]="search">-->
+<!--<app-stock-search [keyword]="search" (addCart)="addCartHandler($event)"></app-stock-search>-->
+<!--<app-stock-cart [stockInfo]="stockInfo"></app-stock-cart>-->
+
+
+
+<!--
+  生命周期钩子
+-->
+
+<!--<app-life [name]="title"></app-life>-->
+<!--<app-test></app-test>-->
+<div class="parent">
+  <h3>我是父组件</h3>
+  <div>
+    问候语： <input [(ngModel)]="greeting">
+  </div>
+  <div>
+    用户姓名： <input [(ngModel)]="user.name">
+  </div>
+  <div>
+    消息： <input [(ngModel)]="message">
+  </div>
+</div>
+<app-child [greeting]="greeting" [user]="user"></app-child>
