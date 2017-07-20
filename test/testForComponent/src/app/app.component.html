@@ -1,5 +1,8 @@
 <h1>
   父组件
 </h1>
+<p>
+  要搜索的股票关键字是{{search}}, 当前价格是{{price | number:'2.2-2'}}
+</p>
 <input placeholder="请输入搜索关键字" [(ngModel)]="search">
-<app-stock-search [keyword]="search"></app-stock-search>
+<app-stock-search [keyword]="search" (searchResult)="searchResultHandler($event)"></app-stock-search>
