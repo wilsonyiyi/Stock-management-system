@@ -1,4 +1,4 @@
-<form #myForm="ngForm" (ngSubmit)="submit(myForm)">
+<form #myForm="ngForm" (ngSubmit)="submit(myForm.value)">
   <div>用户名：<input #nickName="ngModel" ngModel name="nickname"></div>
   <div>手机号：<input ngModel name="telephone"></div>
   <div ngModelGroup="passwordGroup">
@@ -11,5 +11,5 @@
   {{myForm.value | json}}
 </div>
 <div>
-  {{nickName.value | json}}
+  {{nickName.value}}
 </div>

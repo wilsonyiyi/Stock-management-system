@@ -15,4 +15,5 @@ export class TemplateFormComponent implements OnInit {
   submit(info: any): void{
     console.log(info)
   }
+
 }

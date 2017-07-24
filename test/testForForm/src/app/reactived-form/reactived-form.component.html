@@ -1,3 +1,17 @@
-<p>
-  reactived-form works!
-</p>
+<form action="" [formGroup]="formModel" (submit)="createUser()">
+  <div>用户名：<input formControlName="nickname"></div>
+  <div>手机号：<input formControlName="telephone"></div>
+  <div>邮箱：
+    <ul formArrayName="emails">
+      <li *ngFor="let email of formModel.get('emails').controls; let i = index">
+        <input [formControlName]="i">
+      </li>
+    </ul>
+    <button type="button" (click)="addEmail()">增加邮箱</button>
+  </div>
+  <div formGroupName="passwordInfo">
+    <div>密码：<input formControlName="password"></div>
+    <div>密码确认<input formControlName="passwordConfirm"></div>
+  </div>
+  <button type="submit">注册</button>
+</form>
