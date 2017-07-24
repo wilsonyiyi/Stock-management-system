@@ -5,13 +5,12 @@
 
 ### 1.实现功能
 1. 评价组件星星
-
+[img](./stock/src/assets/myimg/star.png)
 
 
 ### 2.使用
 
 > clone代码： git clone https://github.com/Willworkgogogo/Stock-management-system.git
-
 
 > 安装包: npm install
 

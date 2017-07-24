@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Stock, StockService} from "../stock.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 
@@ -18,6 +18,11 @@ export class StockFormComponent implements OnInit {
   		id = param["id"]
 	})
   	this.stock = this.stockService.getStock(id);
+  }
+
+  updateRating(account: number) {
+  	console.log('rating: ', account)
+  	this.stock.rating = account;
   }
 
   cancel() {
