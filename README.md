@@ -4,10 +4,19 @@
 ## 目录
 
 ### 1.实现功能
-1. 评价组件星星
-[img](./stock/src/assets/myimg/star.png)
+1. 评价星星组件
+  - 组件根据传入的评价分数，动态显示星级
+  - readOnly输入属性控制是否可点击操作，改变评级分数
+  - 使用了ngOnChanges(){}钩子来处理输入属性值得变化，简化了代码
+
+![img](./stock/src/assets/myimg/star.png)
+![img1](./stock/src/assets/myimg/star1.png)
 
 
+2. 管道筛选功能
+  - 建立的管道接收两个属性：需要筛选的字段name和搜索内容
+  
+![pipe](./stock/src/assets/myimg/pipe.png)
 ### 2.使用
 
 > clone代码： git clone https://github.com/Willworkgogogo/Stock-management-system.git
