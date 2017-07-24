@@ -1,11 +1,11 @@
 # Stock-management-system
-> Angular4.0构建一个股票后台管理系统
+> Angular4.0 + Bootstrap3.0 + AdminLTE + AngularCLI 构建一个股票后台管理系统
 
-## 目录
+## 目录
 
-### 1.技术栈
-1. Angular4.0
-2. [Admin LTE模板框架](https://adminlte.io/) , 基于bootstrap3, 采用了样式结构
+### 1.实现功能
+1. 评价组件星星
+
 
 
 ### 2.使用
@@ -25,24 +25,24 @@
 
 
 1. 全局样式引入注意细节
-```
+```javascript
 // 以引入bootstrap.css为例
 (项目结构)
--- stock
+-- stock
     -- e2e
     -- node_modules
     -- src
     -- package.json
     -- angular-cli.json
     -- ...
-// 这里选择修改angular-cli.json文件apps数组里对象的styles属性，虽然angular-cli.json是和node_modules同级，但是这里却要以src内部文件的位置作为参考， 所以引用node_modules里的文件时，相对地址需要写成"../node_modules/bootstrap/dist/css/bootstrap.css"
+// 这里选择修改angular-cli.json文件apps数组里对象的styles属性，虽然angular-cli.json是和node_modules同级，但是这里却要以src内部文件的位置作为参考， 所以引用node_modules里的文件时，相对地址需要写成"../node_modules/bootstrap/dist/css/bootstrap.css"
 
 ```
 
 
 
 2. 使用admin-lte时，左边栏无动画效果的原因与解决方法
-```
+```javascript
  //我来终结这个问题！！！看了源码，提供两种解决方式！ 
 
 第一种：
