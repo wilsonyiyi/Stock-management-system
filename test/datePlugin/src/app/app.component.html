@@ -1,0 +1,8 @@
+<div>
+  <div class="slds-text-title--caps slds-m-bottom--small">Inline {{date | date:'longDate'}}</div>
+
+  <button type="button" nglButton="neutral" (click)="gotoDate()" class="slds-m-bottom--large">09 November 2005</button>
+  <button type="button" nglButton="destructive" (click)="date = null" class="slds-m-bottom--large">Clear</button>
+
+  <ngl-datepicker [(date)]="date" class="slds-box slds-box--x-small"></ngl-datepicker>
+</div>
