@@ -5,10 +5,10 @@ const app = express();
 app.get('/', (request, response) => {
    response.send("这里是首页")
 });
-app.get('/stock', (request, response) => {
+app.get('/api/stock', (request, response) => {
     response.json(stocks)
 });
-app.get('/stock/:id', (request, response) => {
+app.get('/api/stock/:id', (request, response) => {
     response.json(stocks.find(stock => stock.id == request.params.id))
 });
 

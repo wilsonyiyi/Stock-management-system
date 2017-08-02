@@ -5,10 +5,10 @@ var app = express();
 app.get('/', function (request, response) {
     response.send("这里是首页");
 });
-app.get('/stock', function (request, response) {
+app.get('/api/stock', function (request, response) {
     response.json(stocks);
 });
-app.get('/stock/:id', function (request, response) {
+app.get('/api/stock/:id', function (request, response) {
     response.json(stocks.find(function (stock) { return stock.id == request.params.id; }));
 });
 var server = app.listen(8080, 'localhost', function () {

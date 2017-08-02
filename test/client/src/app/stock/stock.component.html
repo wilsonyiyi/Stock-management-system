@@ -1,0 +1,12 @@
+<div>
+  <h3>股票信息</h3>
+</div>
+<ul>
+  <pre>
+    什么是async？通过这个管道，实现流的输出控制？流数据可以直接操作吗？已经被map操作符处理成json数据了，所以能直接操作。
+    这个比先把流存储在变量里，再去subscribe它，再把拿到的值存到另一个变量当中，再传值给页面，省力很多。
+  </pre>
+  <li *ngFor="let stock of stocks | async">
+    {{stock.name}}
+  </li>
+</ul>
