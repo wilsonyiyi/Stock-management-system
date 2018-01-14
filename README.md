@@ -1,6 +1,7 @@
 # Stock-management-system
 > Angular4.0 + Bootstrap3.0 + AdminLTE + AngularCLI 构建一个股票后台管理系统
 
+
 ## 目录
 
 ### 1.实现功能
@@ -15,6 +16,8 @@
 
 2. 管道筛选功能
   - 建立的管道接收两个属性：需要筛选的字段name和搜索内容
+  - 
+  - 
   
 ![pipe](./stock/src/assets/myimg/pipe.png)
 ### 2.使用
