@@ -29,12 +29,12 @@
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../node_modules/admin-lte/dist/js/AdminLTE.js"
       ],
-      "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
-    }
+	  "environmentSource": "environments/environment.ts",
+	  "environments": {
+		"dev": "environments/environment.ts",
+		"prod": "environments/environment.prod.ts"
+	  }
+	}
   ],
   "e2e": {
     "protractor": {
