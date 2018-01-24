@@ -1,6 +1,7 @@
 # Stock-management-system
 > Angular4.0 + Bootstrap3.0 + AdminLTE + AngularCLI 构建一个股票后台管理系统
 
+
 ## 目录
 
 ### 1.实现功能
@@ -15,6 +16,8 @@
 
 2. 管道筛选功能
   - 建立的管道接收两个属性：需要筛选的字段name和搜索内容
+  - 
+  - 
   
 ![pipe](./stock/src/assets/myimg/pipe.png)
 ### 2.使用
@@ -81,8 +84,6 @@
 
 我们npm下载的admin-lte里的app.js文件并没有给data-toggle="push-menu"这个按钮加任何操作， 实际人家是要给data-toggle="offcanvas"加左边栏这个效果。
 
-
-
 总结下， 我觉得坑是在， admin-lte官方更新了自己网站的代码，但是npm上的并没有更新，所以才导致了这个问题。
 
 第一种解决方案的缺点是，你不能更新admin-lte这个包了。
@@ -91,4 +92,7 @@
 
 ```
 
+-----------
+更新2018-01-13
+-----------
 
