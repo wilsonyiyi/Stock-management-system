@@ -26,11 +26,11 @@ export class StockFormComponent implements OnInit {
   }
 
   cancel() {
-	this.route.navigateByUrl('/stock');
+	  this.route.navigateByUrl('/stock');
   }
 
   save() {
-	this.route.navigateByUrl('/stock');
+	  this.route.navigateByUrl('/stock');
   }
 
 }

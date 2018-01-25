@@ -35,7 +35,7 @@ export class StarsComponent implements OnInit, OnChanges {
   	if (!this.readOnly) {
   	  this.rating = index + 1;
   	  this.clickRating.emit(this.rating);
-	}
+	  }
   }
 
 }

@@ -45,8 +45,8 @@ const routeConfig: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-	ReactiveFormsModule,
-	RouterModule.forRoot(routeConfig)
+    ReactiveFormsModule,
+    RouterModule.forRoot(routeConfig)
   ],
   providers: [StockService],
   bootstrap: [AppComponent]

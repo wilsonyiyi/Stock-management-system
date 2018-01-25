@@ -19,10 +19,10 @@ export class ContentComponent implements OnInit {
 	  		if (event.url == '/dashboard') {
 	  			this.pageTitle = "首页";
 	  			this.pageDesc = "";
-			}else if (event.url.startsWith('/stock')) {
-	  			this.pageTitle = "股票信息管理";
-	  			this.pageDesc = "进行股票信息管理"
-			}
+				}else if (event.url.startsWith('/stock')) {
+						this.pageTitle = "股票信息管理";
+						this.pageDesc = "进行股票信息管理"
+				}
 		  })
   }
 
