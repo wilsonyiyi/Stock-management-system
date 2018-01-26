@@ -21,6 +21,10 @@ export class StarsComponent implements OnInit, OnChanges {
   ngOnInit() {
 
   }
+  
+  /**
+   * ngOnchanges 钩子，在输入属性发生变化时，会被自动调起
+   */ 
   ngOnChanges (changes: SimpleChanges): void {
 	  // 生成一个boolean数组， 返回stars
 	  // 实星返回false， 空星返回true
@@ -33,7 +37,9 @@ export class StarsComponent implements OnInit, OnChanges {
 
   confirmStar(index) {
   	if (!this.readOnly) {
-  	  this.rating = index + 1;
+      // 修改输入属性， angular会调用ngOnChanges钩子函数
+      this.rating = index + 1;
+      // 通知父组件
   	  this.clickRating.emit(this.rating);
 	  }
   }
